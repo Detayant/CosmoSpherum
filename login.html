@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход / Регистрация — CosmoSpherum</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<video autoplay muted loop playsinline id="main-bg-video">
+  <source src="video/contacts-bg.mp4" type="video/mp4">
+</video>
+<header class="main-header">
+  <div class="logo">CosmoSpherum</div>
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Главная</a>
+    <a href="events.html" class="nav-link">Мероприятия</a>
+    <a href="discounts.html" class="nav-link">Скидки и акции</a>
+    <a href="contacts.html" class="nav-link">О нас</a>
+    <a href="login.html" class="nav-link active">Войти</a>
+  </nav>
+</header>
+<main class="container">
+  <div class="form-container">
+    <div class="tabs">
+      <button type="button" class="tab-btn active" id="tab-login">Вход</button>
+      <button type="button" class="tab-btn" id="tab-register">Регистрация</button>
+    </div>
+    <form id="login-form">
+      <div class="form-group"><label>Email</label><input type="email" id="login-email" required></div>
+      <div class="form-group"><label>Пароль</label><input type="password" id="login-password" required></div>
+      <button type="submit" class="btn btn-register" style="width:100%;">Войти</button>
+      <p id="login-error" class="error-msg"></p>
+    </form>
+    <form id="register-form" style="display:none;">
+      <div class="form-group"><label>Фамилия Имя Отчество</label><input type="text" id="reg-fullname" placeholder="Иванов Иван Иванович" required></div>
+      <div class="form-group"><label>Дата рождения</label><input type="date" id="reg-birthdate" required></div>
+      <div class="form-group"><label>Email</label><input type="email" id="reg-email" required></div>
+      <div class="form-group"><label>Пароль</label><input type="password" id="reg-password" required minlength="6"></div>
+      <div class="form-group"><label>Подтверждение пароля</label><input type="password" id="reg-password-confirm" required></div>
+      <div class="checkbox-group"><input type="checkbox" id="agree-policy" required><label for="agree-policy">Я принимаю политику конфиденциальности</label></div>
+      <div class="checkbox-group"><input type="checkbox" id="agree-data" required><label for="agree-data">Я согласен на обработку персональных данных</label></div>
+      <button type="submit" class="btn btn-register" style="width:100%; margin-top: 20px;">Зарегистрироваться</button>
+      <p id="register-error" class="error-msg"></p>
+    </form>
+    <div id="verify-section" style="display:none;">
+      <h3 style="color:var(--gold); margin-bottom:15px;">Подтвердите email</h3>
+      <p style="margin-bottom:12px; line-height:1.6;">Мы отправили код на вашу почту. Введите его ниже.</p>
+      <div class="form-group" style="margin-bottom:20px;">
+        <input type="text" id="verify-code" placeholder="Код из письма">
+      </div>
+      <button type="button" class="btn btn-register" id="verify-btn" style="width:100%;">Подтвердить</button>
+      <p id="verify-error" class="error-msg"></p>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <span>© 2026 CosmoSpherum. Все права защищены.</span>
+  <span>г. Саранск, ул. Космонавтов, 11А</span>
+  <span>Пн–Пт 12:00–21:00, Сб–Вс 10:00–23:00</span>
+  <a href="mailto:infocosmospherum@gmail.com">infocosmospherum@gmail.com</a>
+</footer>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

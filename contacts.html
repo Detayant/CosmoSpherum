@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас — CosmoSpherum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=fdbc3b46-901d-4ec6-bdc0-c49ebd88df3e&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="main-bg-video">
+    <source src="video/contacts-bg.mp4" type="video/mp4">
+  </video>
+
+  <header class="main-header">
+    <div class="logo">CosmoSpherum</div>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Главная</a>
+      <a href="events.html" class="nav-link">Мероприятия</a>
+      <a href="discounts.html" class="nav-link">Скидки и акции</a>
+      <a href="contacts.html" class="nav-link active">О нас</a>
+      <span class="user-info" id="auth-block">
+        <a href="login.html" class="nav-link" id="login-link">Войти</a>
+      </span>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contacts-hero">
+      <h1>О нас</h1>
+    </section>
+
+    <div id="map"></div>
+
+    <div class="contacts-simple">
+      <p><span class="contact-key">Телефоны:</span> +7 (8342) 56-78-90, +7 906 379-80-90</p>
+      <p><span class="contact-key">Техническая поддержка, общие вопросы:</span> <a href="mailto:infocosmospherum@gmail.com">infocosmospherum@gmail.com</a></p>
+      <p><span class="contact-key">Реклама и сотрудничество:</span> <a href="mailto:fadeevigor792@gmail.com">fadeevigor792@gmail.com</a></p>
+      <p><span class="contact-key">Юридический адрес:</span> респ. Мордовия, г. Саранск, ул. Галактическая, 17, 430001</p>
+      <p><span class="contact-key">Физический адрес:</span> респ. Мордовия, г. Саранск, ул. Космонавтов, 11А, 430005</p>
+      <p><span class="contact-key">Часы работы:</span> Пн–Пт 12:00–21:00, Сб–Вс 10:00–23:00</p>
+    </div>
+
+    <h2 class="section-heading">Награды и достижения</h2>
+    <div class="awards-flex">
+      <div class="award-item">
+        <img src="img/awards/award1.jpg" alt="Награда 1" class="award-img">
+        <svg class="award-svg" viewBox="0 0 550 400" preserveAspectRatio="none">
+          <rect x="2" y="2" width="546" height="396" rx="14" fill="none"
+                stroke="#f5cf6c" stroke-width="3"
+                stroke-dasharray="950 950" stroke-linecap="round"
+                class="glow-head"/>
+          <rect x="2" y="2" width="546" height="396" rx="14" fill="none"
+                stroke="#f5cf6c" stroke-width="3" opacity="0.3"
+                stroke-dasharray="950 950" stroke-linecap="round"
+                class="glow-tail"/>
+        </svg>
+      </div>
+      <div class="award-item">
+        <img src="img/awards/award2.jpg" alt="Награда 2" class="award-img">
+        <svg class="award-svg" viewBox="0 0 550 400" preserveAspectRatio="none">
+          <rect x="2" y="2" width="546" height="396" rx="14" fill="none"
+                stroke="#f5cf6c" stroke-width="3"
+                stroke-dasharray="950 950" stroke-linecap="round"
+                class="glow-head"/>
+          <rect x="2" y="2" width="546" height="396" rx="14" fill="none"
+                stroke="#f5cf6c" stroke-width="3" opacity="0.3"
+                stroke-dasharray="950 950" stroke-linecap="round"
+                class="glow-tail"/>
+        </svg>
+      </div>
+      <div class="award-item">
+        <img src="img/awards/award3.jpg" alt="Награда 3" class="award-img">
+        <svg class="award-svg" viewBox="0 0 550 400" preserveAspectRatio="none">
+          <rect x="2" y="2" width="546" height="396" rx="14" fill="none"
+                stroke="#f5cf6c" stroke-width="3"
+                stroke-dasharray="950 950" stroke-linecap="round"
+                class="glow-head"/>
+          <rect x="2" y="2" width="546" height="396" rx="14" fill="none"
+                stroke="#f5cf6c" stroke-width="3" opacity="0.3"
+                stroke-dasharray="950 950" stroke-linecap="round"
+                class="glow-tail"/>
+        </svg>
+      </div>
+    </div>
+
+    <h2 class="section-heading">Наши партнёры</h2>
+    <div class="partners-grid">
+      <div class="partner-item">
+        <img src="img/partners/worldwide-telescope.png" alt="WorldWide Telescope" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/solar-system-scope.png" alt="Solar System Scope" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/virgin-galactic.png" alt="Virgin Galactic" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/deep-space-industries.png" alt="Deep Space Industries" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/heavens-above.png" alt="Heavens-Above" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/100-year-starship.png" alt="100 Year Starship" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/hirise.png" alt="HiRISE" class="partner-logo">
+      </div>
+      <div class="partner-item">
+        <img src="img/partners/seti-at-home.png" alt="SETI@home" class="partner-logo">
+      </div>
+    </div>
+
+    <div class="license-box">
+      <h3>Официальная лицензия</h3>
+      <p>CosmoSpherum осуществляет деятельность на основании лицензии РКН № ЛР-2026/00417 от 12 февраля 2026 года. Лицензия разрешает проведение культурно-просветительских мероприятий с использованием цифровых полнокупольных проекционных систем на территории Российской Федерации.</p>
+    </div>
+  </main>
+
+<footer class="site-footer">
+  <span>© 2026 CosmoSpherum. Все права защищены.</span>
+  <span>г. Саранск, ул. Космонавтов, 11А</span>
+  <span>Пн–Пт 12:00–21:00, Сб–Вс 10:00–23:00</span>
+  <a href="mailto:infocosmospherum@gmail.com">infocosmospherum@gmail.com</a>
+</footer>
+
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+        center: [54.16040250, 45.15883166],
+        zoom: 16,
+        controls: ['zoomControl', 'fullscreenControl']
+      });
+      var myPlacemark = new ymaps.Placemark(
+        [54.16040250, 45.15883166],
+        {
+          hintContent: 'Планетарий CosmoSpherum',
+          balloonContentHeader: 'Планетарий CosmoSpherum',
+          balloonContentBody: 'г. Саранск, ул. Космонавтов, 11А\nТелефон: +7 (8342) 56-78-90',
+          balloonContentFooter: '<a href="https://yandex.ru/maps/?ll=45.15883166,54.16040250&z=16" target="_blank">Открыть в Яндекс.Картах</a>'
+        },
+        { preset: 'islands#blueStretchyIcon', iconColor: '#7c3aed' }
+      );
+      myMap.geoObjects.add(myPlacemark);
+    });
+  </script>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

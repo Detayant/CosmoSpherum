@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CosmoSpherum — Планетарий для детей и взрослых</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<video autoplay muted loop playsinline id="main-bg-video">
+  <source src="video/contacts-bg.mp4" type="video/mp4">
+</video>
+<header class="main-header">
+  <div class="logo">CosmoSpherum</div>
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link active">Главная</a>
+    <a href="events.html" class="nav-link">Мероприятия</a>
+    <a href="discounts.html" class="nav-link">Скидки и акции</a>
+    <a href="contacts.html" class="nav-link">О нас</a>
+    <span class="user-info" id="auth-block">
+      <a href="login.html" class="nav-link" id="login-link">Войти</a>
+    </span>
+  </nav>
+</header>
+<main class="container">
+  <section class="hero">
+    <h1>Откройте Вселенную вместе с детьми</h1>
+    <p style="color: var(--white);">Современный цифровой планетарий, где наука превращается в незабываемое приключение для всей семьи.</p>
+    <a href="events.html" class="btn btn-hero">Выбрать программу</a>
+  </section>
+
+  <section class="why-us-section">
+    <div class="section-intro">
+      <h2 class="section-title" style="color: var(--gold);">Почему выбирают нас</h2>
+      <p class="section-subtitle" style="color: var(--white);">Шесть слагаемых вашего идеального космического досуга</p>
+    </div>
+    <div class="features-stack">
+      <div class="feature-block reveal left"><div class="feature-text"><h3>Полнокупольное шоу</h3><p>Проекция 360° превращает зал в открытый космос. Ребёнок перестаёт быть зрителем и становится участником событий, разворачивающихся прямо над головой. Такой эффект погружения не даст ни один плоский экран.</p></div></div>
+      <div class="feature-block reveal right"><div class="feature-text"><h3>Лекторы, которые умеют удивлять</h3><p>Наши ведущие — практикующие астрономы и популяризаторы науки. Они не просто читают лекции, а разжигают любопытство, отвечают на сотни «почему» и превращают сложные теории в захватывающие истории.</p></div></div>
+      <div class="feature-block reveal left"><div class="feature-text"><h3>Интерактив на каждом шагу</h3><p>Дети трогают метеориты, запускают мини‑ракеты, управляют луноходом и собирают модель Солнечной системы. Всё, что можно пощупать, включить или запустить — работает и дарит радость познания.</p></div></div>
+      <div class="feature-block reveal right"><div class="feature-text"><h3>Льготы для тех, кому нужна поддержка</h3><p>Многодетные семьи, дети‑сироты и люди с инвалидностью получают скидки, подтверждённые документально. Мы уверены, что наука должна быть доступна каждому.</p></div></div>
+      <div class="feature-block reveal left"><div class="feature-text"><h3>Техника последнего поколения</h3><p>Оптика Celestron, цифровые проекторы 8K и пространственный звук Dolby Atmos. Картинка настолько чёткая, что видно кольца Сатурна и кратеры на Луне, а звук переносит в эпицентр событий.</p></div></div>
+      <div class="feature-block reveal right"><div class="feature-text"><h3>Собственная обсерватория</h3><p>После купольного шоу можно выйти на открытую площадку и посмотреть на звёзды в настоящие телескопы. В ясную ночь видны облака Юпитера, двойные звёзды и далёкие туманности.</p></div></div>
+    </div>
+  </section>
+
+  <section id="stats-section">
+    <h2 class="section-title" style="text-align:center; color:var(--gold); margin:40px 0 20px;">Наш опыт в цифрах</h2>
+    <div class="stats-grid">
+      <div class="stat-item"><span class="stat-number" data-target="15000">0</span><span class="stat-label"> проданных билетов</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="1200">0</span><span class="stat-label"> проведённых сеансов</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="4.8" data-decimals="1">0</span><span class="stat-label"> средняя оценка</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="10" data-suffix=" лет">0</span><span class="stat-label"> работы для вас</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="300">0</span><span class="stat-label"> постоянных гостей</span></div>
+      <div class="stat-item"><span class="stat-number" data-target="50">0</span><span class="stat-label"> авторских программ</span></div>
+    </div>
+  </section>
+
+  <section id="news-section">
+    <h2 style="text-align:center; color:var(--gold); margin:40px 0 30px;">Новости</h2>
+    <div class="news-list">
+      <article class="news-item">
+        <div class="news-image">
+          <img src="img/news/news1.jpg" alt="Телескоп Celestron" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="news-content">
+          <h3>Открытие нового телескопа в обсерватории планетария</h3>
+          <p class="news-date">15 апреля 2026 г.</p>
+          <p>Обсерватория планетария пополнилась современным телескопом Celestron EdgeHD 14. Новое оборудование позволит наблюдать объекты дальнего космоса с недоступной ранее детализацией. Первые публичные наблюдения запланированы на майские праздники. Специалисты провели серию калибровочных тестов, которые подтвердили увеличение проницающей способности на две звёздные величины по сравнению с предыдущей моделью. Теперь посетителям станут доступны наблюдения шаровых скоплений и планетарных туманностей даже в условиях городской засветки.</p>
+        </div>
+      </article>
+      <article class="news-item reverse">
+        <div class="news-image">
+          <img src="img/news/news2.jpg" alt="Лекторий" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="news-content">
+          <h3>Старт летнего цикла лекций «Космические горизонты»</h3>
+          <p class="news-date">5 апреля 2026 г.</p>
+          <p>С июня по август ведущие астрофизики города прочитают восемь открытых лекций, посвящённых чёрным дырам, тёмной материи и колонизации Марса. Вход на мероприятия будет бесплатным по предварительной регистрации. Цикл откроет доктор физико-математических наук А. В. Шестаков с лекцией «Горизонт событий: мифы и реальность». Организаторы обещают интерактивные сессии с демонстрацией трёхмерных моделей и ответами на вопросы слушателей. Расписание будет опубликовано на сайте и в социальных сетях планетария за две недели до первого события.</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <div class="news-image">
+          <img src="img/news/news3.jpg" alt="VR-симулятор" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="news-content">
+          <h3>Планетарий получил грант на разработку VR-симулятора</h3>
+          <p class="news-date">22 марта 2026 г.</p>
+          <p>Министерство науки выделило грант на создание VR-симулятора космического полёта. Проект позволит посетителям в буквальном смысле «пройтись» по поверхности Луны и Марса. Запуск пилотной версии ожидается в сентябре 2026 года. Разработчики уже приступили к оцифровке реальных ландшафтных данных, полученных с марсоходов NASA и лунных миссий, чтобы обеспечить максимальную научную достоверность виртуального пространства. Помимо визуальной составляющей, симулятор будет воспроизводить звуковое окружение и гравитационные ощущения при помощи подвижной платформы.</p>
+        </div>
+      </article>
+      <article class="news-item reverse">
+        <div class="news-image">
+          <img src="img/news/news4.jpg" alt="Юный астроном" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="news-content">
+          <h3>Запуск детской программы «Юный астроном»</h3>
+          <p class="news-date">10 марта 2026 г.</p>
+          <p>Для детей от 7 до 12 лет открыта новая образовательная программа. В течение года участников ждут практические занятия, выездные наблюдения и экскурсия в обсерваторию САО РАН. Программа разделена на четыре тематических модуля: «Солнце», «Планеты», «Звёзды» и «Галактики». По завершении каждого этапа предусмотрено тестирование и выдача именного сертификата. Занятия будут проходить в малочисленных группах, что обеспечит индивидуальный подход к каждому участнику.</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <div class="news-image">
+          <img src="img/news/news5.jpg" alt="Проекционное оборудование" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="news-content">
+          <h3>Обновление проекционного оборудования главного зала</h3>
+          <p class="news-date">1 марта 2026 г.</p>
+          <p>Завершена установка новых лазерных проекторов, увеличивших яркость изображения на 40%. Теперь полнокупольные шоу выходят на качественно иной уровень детализации, максимально приближая зрителя к реалиям космоса. Дополнительно смонтирована система активного охлаждения, гарантирующая стабильную работу техники даже при максимальной нагрузке в часы пик. Первыми обновлённый видеоряд увидят зрители майского премьерного показа «Экзопланеты: в поисках второй Земли».</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="gallery-section">
+    <h2 style="text-align:center; color:var(--gold); margin:40px 0 30px;">Галерея</h2>
+    <div class="carousel-wrapper">
+      <button class="carousel-arrow carousel-arrow-left" id="prevBtn">&#10094;</button>
+      <div class="carousel">
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carouselTrack"></ul>
+        </div>
+      </div>
+      <button class="carousel-arrow carousel-arrow-right" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="reviews-section">
+    <h2 style="text-align:center; color:var(--gold); margin:40px 0 20px;">Родители говорят</h2>
+    <div class="reviews-grid" id="reviews-container"></div>
+  </section>
+
+  <section id="qr-section">
+  <h2 class="section-heading">Нам важно ваше мнение</h2>
+  <div class="qr-grid">
+    <div class="qr-card">
+      <div class="qr-frame qr-complaint">
+        <img src="img/qr/complaint.png" alt="QR-код Пожаловаться" class="qr-img">
+      </div>
+      <p class="qr-caption"><span>Пожаловаться</span></p>
+    </div>
+    <div class="qr-card">
+      <div class="qr-frame qr-review">
+        <img src="img/qr/review.png" alt="QR-код Оценить" class="qr-img">
+      </div>
+      <p class="qr-caption"><span>Оценить</span></p>
+    </div>
+  </div>
+  </section>
+
+  <section style="text-align:center; padding:40px 0;">
+    <h2 style="color:var(--white);">Готовы к путешествию?</h2>
+    <p style="margin:15px 0;">Выберите программу и подарите ребёнку космические эмоции.</p>
+    <a href="events.html" class="btn btn-hero">Записаться сейчас</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 CosmoSpherum. Все права защищены.</span>
+  <span>г. Саранск, ул. Космонавтов, 11А</span>
+  <span>Пн–Пт 12:00–21:00, Сб–Вс 10:00–23:00</span>
+  <a href="mailto:infocosmospherum@gmail.com">infocosmospherum@gmail.com</a>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script>
+  const reviews = [
+    { text: '«Дочка 8 лет в восторге! После шоу "Тайны чёрных дыр" мы записались ещё на две программы. Отличный способ провести выходные.»', author: 'Анна, мама Софии' },
+    { text: '«Впервые увидел такой современный планетарий. Дети задавали вопросы лектору ещё полчаса после окончания. Спасибо за неравнодушный подход!»', author: 'Дмитрий, отец Кирилла' },
+    { text: '«Отмечали день рождения сына. Организовали специальный квест по созвездиям — дети были в полном восторге, а взрослые узнали много нового.»', author: 'Елена, мама Артёма' },
+    { text: '«Приезжаем из соседнего города раз в месяц. Каждая программа — маленькое открытие. Льготы для многодетных очень помогают.»', author: 'Светлана, мама троих детей' },
+    { text: '«После посещения обсерватории дочка попросила телескоп на Новый год. Теперь наблюдаем звёзды всей семьёй. Огромное спасибо за вдохновение!»', author: 'Алексей, папа Марины' },
+    { text: '«Записались на все летние программы для детей 7–10 лет. Интерактив и подача материала выше всяких похвал. Ребята просто сияли.»', author: 'Марина, мама Ильи и Даши' },
+    { text: '«Был на практикуме по астрофото — очень толково, даже новичок сразу снял Луну. Вернёмся осенью на повторный курс.»', author: 'Сергей, отец Никиты' },
+    { text: 'Здесь может быть ваш отзыв', author: '' }
+  ];
+  const reviewsContainer = document.getElementById('reviews-container');
+  reviews.forEach(r => {
+    const card = document.createElement('div');
+    card.className = 'review-card';
+    if (r.text === 'Здесь может быть ваш отзыв') {
+      card.innerHTML = `<p class="review-invite">${escapeHtml(r.text)}</p>`;
+    } else {
+      const escapedText = escapeHtml(r.text);
+      const escapedAuthor = escapeHtml(r.author);
+      card.innerHTML = `<div class="review-body"><span class="review-placeholder">${escapedText}</span><p class="review-text typing-text" data-fulltext="${escapedText.replace(/"/g, '&quot;')}"></p></div><p class="review-author">${escapedAuthor}</p>`;
+    }
+    reviewsContainer.appendChild(card);
+  });
+
+  function typeText(el, text, speed = 10) {
+    let i = 0;
+    el.textContent = '';
+    const interval = setInterval(() => {
+      if (i < text.length) { el.textContent += text[i]; i++; }
+      else { clearInterval(interval); el.classList.add('typed'); }
+    }, speed);
+  }
+  const reviewsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.typing-text').forEach((el, idx) => {
+          const fullText = el.getAttribute('data-fulltext');
+          if (fullText) setTimeout(() => typeText(el, fullText, 10), idx * 800);
+        });
+        reviewsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  reviewsObserver.observe(document.getElementById('reviews-section'));
+
+  const featObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const block = entry.target;
+        const delay = parseInt(block.dataset.delay || 0);
+        setTimeout(() => block.classList.add('visible'), delay);
+        featObserver.unobserve(block);
+      }
+    });
+  }, { threshold: 0.25, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.feature-block.reveal').forEach((b, i) => { b.dataset.delay = i * 120; featObserver.observe(b); });
+
+  function animateNumber(el) {
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimals) || 0;
+    const suffix = el.dataset.suffix || '';
+    const duration = 1500;
+    const start = performance.now();
+    function update(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      el.textContent = (target * progress).toFixed(decimals) + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+      else el.textContent = target.toFixed(decimals) + suffix;
+    }
+    requestAnimationFrame(update);
+  }
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.stat-number[data-target]').forEach(n => animateNumber(n));
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  statsObserver.observe(document.getElementById('stats-section'));
+
+  const galleryImages = [
+    'img/gallery/01.jpg', 'img/gallery/02.jpg', 'img/gallery/03.jpg', 'img/gallery/04.jpg', 'img/gallery/05.jpg',
+    'img/gallery/06.jpg', 'img/gallery/07.jpg', 'img/gallery/08.jpg', 'img/gallery/09.jpg', 'img/gallery/10.jpg'
+  ];
+  const track = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  galleryImages.forEach((src, index) => {
+    const li = document.createElement('li');
+    li.className = 'carousel-slide';
+    li.setAttribute('data-index', index);
+    li.innerHTML = `<img src="${src}" alt="Фото ${index+1}" class="carousel-img">`;
+    track.appendChild(li);
+  });
+
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+
+  function updateCarousel() {
+    slides.forEach((slide, index) => {
+      slide.classList.remove('active', 'left', 'right', 'hidden');
+      if (index === currentIndex) {
+        slide.classList.add('active');
+      } else if (index === (currentIndex - 1 + slides.length) % slides.length) {
+        slide.classList.add('left');
+      } else if (index === (currentIndex + 1) % slides.length) {
+        slide.classList.add('right');
+      } else {
+        slide.classList.add('hidden');
+      }
+    });
+  }
+
+  function goTo(index) {
+    currentIndex = (index + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+  nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+  updateCarousel();
+</script>
+</body>
+</html>

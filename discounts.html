@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скидки и акции — CosmoSpherum</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<video autoplay muted loop playsinline id="main-bg-video">
+  <source src="video/contacts-bg.mp4" type="video/mp4">
+</video>
+<header class="main-header">
+  <div class="logo">CosmoSpherum</div>
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Главная</a>
+    <a href="events.html" class="nav-link">Мероприятия</a>
+    <a href="discounts.html" class="nav-link active">Скидки и акции</a>
+    <a href="contacts.html" class="nav-link">О нас</a>
+    <span class="user-info" id="auth-block">
+      <a href="login.html" class="nav-link" id="login-link">Войти</a>
+    </span>
+  </nav>
+</header>
+
+<main class="container discounts-page">
+  <section class="discounts-hero">
+    <h1>Скидки и акции</h1>
+    <div class="intro-text">
+      <p>Планетарий CosmoSpherum гордится самой большой системой скидок среди культурно-просветительских учреждений региона. Мы уверены, что наука должна быть открытой для каждого — вне зависимости от возраста, рода занятий или жизненных обстоятельств. Именно поэтому постоянные льготы, сезонные акции и специальные предложения охватывают все категории гостей.</p>
+      <p>Ниже вы найдёте подробные условия действующих программ. Выберите подходящую и откройте для себя космос на выгодных условиях.</p>
+    </div>
+  </section>
+
+  <section class="discounts-system reveal">
+    <h2>Постоянные скидки</h2>
+    <div class="discount-list-wrapper">
+      <ul class="discount-list">
+        <li class="discount-item reveal-item">
+          <span class="discount-percent">5%</span>
+          <div class="discount-info">
+            <strong>Студенты</strong>
+            <span>Университетская скамья открывает путь к звёздам со скидкой</span>
+          </div>
+        </li>
+        <li class="discount-item reveal-item">
+          <span class="discount-percent">20%</span>
+          <div class="discount-info">
+            <strong>Пенсионеры</strong>
+            <span>За плечами — целая жизнь, впереди — целая Вселенная</span>
+          </div>
+        </li>
+        <li class="discount-item reveal-item">
+          <span class="discount-percent">30%</span>
+          <div class="discount-info">
+            <strong>Беременные женщины</strong>
+            <span>Космическое путешествие для двоих по особой цене</span>
+          </div>
+        </li>
+        <li class="discount-item reveal-item">
+          <span class="discount-percent">50%</span>
+          <div class="discount-info">
+            <strong>День рождения</strong>
+            <span>Праздничная скидка имениннику за 3 дня до и после даты</span>
+          </div>
+        </li>
+        <li class="discount-item reveal-item">
+          <span class="discount-percent">75%</span>
+          <div class="discount-info">
+            <strong>Люди с инвалидностью</strong>
+            <span>Мы убрали барьеры, чтобы оставить только восхищение космосом</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="discounts-weekly reveal">
+    <h2>Акции недели</h2>
+    <div class="weekly-grid">
+      <div class="weekly-card">
+        <div class="weekly-badge">10%</div>
+        <div class="weekly-content">
+          <h3>Астрофото: практикум</h3>
+          <p>Скидка 10% на практический мастер‑класс по съёмке ночного неба</p>
+          <span class="weekly-date">6 – 10 июля 2026 г.</span>
+        </div>
+      </div>
+      <div class="weekly-card">
+        <div class="weekly-badge">5%</div>
+        <div class="weekly-content">
+          <h3>Утренние сеансы</h3>
+          <p>Скидка 5% на любое мероприятие при посещении до 12:00</p>
+          <span class="weekly-date">13 – 19 июля 2026 г.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="discounts-rules reveal">
+    <h2>Как применяются скидки</h2>
+    <ul class="rules-list">
+      <li>Скидки не суммируются — из всех доступных вариантов автоматически выбирается наибольшая.</li>
+      <li>Скидка распространяется на всех посетителей в заказе, если лицо, оформляющее заказ, имеет подтверждённое право на льготу.</li>
+      <li>Чтобы воспользоваться льготой, предъявите подтверждающий документ администратору.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 CosmoSpherum. Все права защищены.</span>
+  <span>г. Саранск, ул. Космонавтов, 11А</span>
+  <span>Пн–Пт 12:00–21:00, Сб–Вс 10:00–23:00</span>
+  <a href="mailto:infocosmospherum@gmail.com">infocosmospherum@gmail.com</a>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          if (entry.target.classList.contains('discounts-system')) {
+            const items = entry.target.querySelectorAll('.reveal-item');
+            items.forEach((item, index) => {
+              setTimeout(() => {
+                item.classList.add('visible');
+              }, index * 150);
+            });
+          }
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => sectionObserver.observe(el));
+  });
+</script>
+</body>
+</html>
